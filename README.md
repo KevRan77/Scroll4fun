@@ -16,10 +16,13 @@ Notre site web est hébergé sur le serveur d'un de nos camarades, donc si vous 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-
 # Fonctionnalités
 
  Plusieurs fonctionnalités y sont présentes :
+ 
+- Initialisation / Réinitialisation
+
+Vous pouvez initialiser le site afin de n'avoir que les éléments basiques en ajoutant "/install" à l'url comme ceci : 82.236.131.8:8082/install
 
 - L'ajout d'images : 
 
