@@ -1,0 +1,172 @@
+/*
+ * @auteur : Ranaivo kevin, Remy Nora
+ * Inspiré par Start Bootstrap
+ */
+ 
+/*Fichier CSS correspondant à la vue index*/
+
+
+/*********************** 
+         Boutons 
+************************/
+button{
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button_center{ 
+        margin-left: 43%;
+        margin-bottom: 4%;     
+}
+
+.range{
+    display: inline;
+}
+
+/*********************** 
+           Box 
+************************/
+.box{
+    overflow: hidden;
+    margin-top: 17em;
+    top: 14em;
+    padding: 3%;
+     background-color: rgba(41, 41, 41, 0.6);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.9) inset;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.9) inset;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.5) inset; 
+}
+
+.box_theme{  
+    top: 14em;
+    padding: 1%;
+}
+
+
+/*********************** 
+    Top page : Titres 
+************************/
+.top{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.bg{
+    background-image: inherit;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+}
+
+.title, .name-bar {
+    margin-top: 0;
+    display: none;
+}
+
+
+/*********************** 
+  Top page : Navigation 
+************************/
+@media screen and (min-width:768px) {
+    .title {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .name-bar {
+        display: inherit;
+        margin: 0;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+        top: 25px;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 25px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+       
+        display: table;
+        float: none;
+        margin: 0 auto;       
+        table-layout: fixed;
+        font-size: 1.25em;
+        position: relative;
+    }
+   
+}
+
+
+/*********************** 
+         Images 
+************************/
+#ratio_size {
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    vertical-align: center;
+}
+
+
+/*********************** 
+       Propriété h2 
+************************/
+h2 { 
+  text-align: center;
+  margin-top: 0px;
+} 
+
+
+
+
+ 

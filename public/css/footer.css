@@ -1,0 +1,50 @@
+/*
+ * @auteur : Ranaivo kevin, Remy Nora
+ * 
+ */
+ 
+/*Fichier CSS correspondant au footer*/
+
+
+
+/*********************** 
+         Footer 
+************************/
+#footer {
+  position: relative;
+  background-color: #1B1B1B;
+  text-align: center;
+  font-family: Arial;
+}
+
+
+#footer div {
+  line-height: 380%;
+ 
+
+}
+
+
+/*********************** 
+      Effet statique 
+************************/
+div > p{
+  color : white;
+  margin: 0px;
+}
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push {
+height: 4em;
+}
