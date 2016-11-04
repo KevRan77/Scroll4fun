@@ -4,13 +4,13 @@ Really simple item management website
 
 # Descriptif
 
-Projet de 4ème année en WEB réalisé par Nora Rémy et Kevin Ranaivo. Scroll4fun est un site web ayant pour vocation le partage d'images drôles à l'ensemble de la communauté du net.
+Projet de 4ème année en WEB réalisé par Nora Rémy et Kevin Ranaivo en TCSI2. Scroll4fun est un site web ayant pour vocation le partage d'images drôles à l'ensemble de la communauté du net.
 
 
 -----------------------------------------------------------------------------------------------------------------------------
 # Accès au site web
 
-Pour accéder au site web, il faut entrer dans l'url de votre navigateur l'adresse suivante : 82.236.131.8:8082
+Pour accéder au site web, il faut entrer dans l'url de votre navigateur l'adresse suivante : http://82.236.131.8:8082/
 
 Notre site web est hébergé sur le serveur d'un de nos camarades, donc si vous rencontrez une quelconque erreur avec l'url, veuillez contacter l'hôte à l'adresse suivante : cosson@et.esiea.fr
 
