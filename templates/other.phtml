@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Vue Form qui affiche les images associées au thème Other -->
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Scroll4fun - Other</title>
+     
+    <!-- Fichiers CSS -->
+      <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+      <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+      <link href='/css/index.css' rel='stylesheet' type='text/css'>
+      <link href='/css/form.css' rel='stylesheet' type='text/css'>
+      <link href='/css/footer.css' rel='stylesheet' type='text/css'>
+    <!-- Fichiers CSS -->
+  </head>
+
+  <body>  
+    <!-- # Top de la page # -->
+      <div class = "top bg">
+
+          <!-- Titres -->
+          <div class="title">Scroll4fun</div>
+          <div class="name-bar">Ranaivo Kevin | Rémy Nora</div>
+          <!-- Titres -->
+
+          <!-- Barre de navigation -->
+          <nav class="navbar navbar-default" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/theme">Thème</a></li>
+                    <li><a href="/form">Ajouter</a></li>
+                </ul>
+          </nav>
+          <!-- Barre de navigation -->
+      </div> 
+    <!-- # Top de la page # -->
+
+    <!-- # Mid de la page # -->
+    <!-- # Affichage des images associées au thème OTHER # -->
+    <div class="wrapper">
+      <div class="box">
+        <?php foreach ($pictures as $picture) { ?>
+          <?php if ($picture->theme == "Other") {?>  
+            <div class="box_theme">
+              <!-- Titre de l'image  -->
+              <div><h2><?= htmlspecialchars($picture->title); ?></h2></div>
+    
+              <!-- Affiche les images -->
+              <div> 
+                <form action="/show/<?= htmlspecialchars($picture->id); ?>" method="GET">
+                  <button type="submit" class="center">
+                    <img src="/uploads/<?= htmlspecialchars($picture->photo); ?>" width="460" height="432"/>
+                  </button>
+                </form>
+              </div>
+              <div class="button_center">
+                <!-- Formulaire de mise à jour d'images -->
+                <button type="button" id="Bouton<?= htmlspecialchars($picture->id); ?>" onclick="edit(<?= htmlspecialchars($picture->id); ?>);" class="myButton">Modifier</button>
+                <!-- Formulaire de suppression d'images -->
+                <form action="/delete/<?= htmlspecialchars($picture->id); ?>" method="GET" class="range" >
+                  <button type="submit" >
+                    <img src="/uploads/delete.png" width="46" height="43"/>
+                  </button>
+                </form>
+              </div>
+            </div>
+          <?php }?> 
+        <?php unset($picture); } ?>
+        <script type="text/javascript" src="/js/edit.js"></script>
+      </div>
+
+      <div class="modal fade" id="modalKev" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">           
+        <form enctype="multipart/form-data"  action="get_action()" method="POST" id="Add" class="simpleBox">
+          <div class="center" >Modifier une image</div>
+          <label for = "text"> Nom de l'image : </label> 
+          <input type="text" required="required" name = "title"/>  
+            <p>
+              <br><label for="vartheme">Thème de la photo :</label><br/>
+              <!-- Checkbox -->
+              <div class = "specialtext">
+                <input checked type="radio" name="theme" value="Game"/><label for="Game">Game</label><br/>
+                <input type="radio" name="theme" value="SuperHero"/><label for="SuperHero">SuperHero</label><br/>
+                <input type="radio" name="theme" value="Animal"/><label for="Animal">Animal</label><br/>
+                <input type="radio" name="theme" value = "Food"/><label for="Food">Food</label><br/>
+                <input type="radio" name="theme" value="Work"/><label for="Work">Work</label><br/>
+                <input type="radio" name="theme" value="Other"/><label for="Other">Other</label><br/>
+              </div>  
+            </p>
+          <input type="file" name="file" required="required"/>
+          <input type="submit" value="Valider" class="myButton"/>
+        </form>
+      </div>
+      <div class="push"></div>
+    </div>
+    <!-- # Mid de la page # -->
+    <!-- # Affichage des images associées au thème OTHER # -->
+        
+    <!-- # Bas de la page # -->
+      <div id="footer" class="footer">
+        <div>
+          <p> &copy; 2016 Ranaivo Rémy </p>
+        </div>
+      </div>  
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/bootstrap.js"></script>
+    <!-- # Fin Bas de la page # -->
+  </body>
+</html>
